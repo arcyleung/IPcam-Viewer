@@ -47,7 +47,7 @@ public class ViewerFrame extends javax.swing.JFrame {
      */
     public ViewerFrame() {
         initComponents();
-        File blankimg = new File("resources/dummy.jpg");
+        File blankimg = new File("dummy.jpg");
         File config = new File("config.cfg");
 
         try {
