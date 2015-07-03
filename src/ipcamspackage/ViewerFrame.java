@@ -48,20 +48,9 @@ public class ViewerFrame extends javax.swing.JFrame {
     public ViewerFrame() {
         initComponents();
         File blankimg = new File("resources/dummy.jpg");
-        File pathF = new File("config.cfg");
-        String path="";
-        System.out.println(System.getProperty("user.dir"));
+        File config = new File("config.cfg");
 
         try {
-            FileReader frp = new FileReader(pathF);
-            BufferedReader brp = new BufferedReader(frp);
-            path = brp.readLine();
-        } catch (Exception e) {
-
-        }
-
-        try {
-            File config = new File("~/Desktop/config.cfg");
             dummy = ImageIO.read(blankimg);
             FileReader fr = new FileReader(config);
             BufferedReader br = new BufferedReader(fr);
