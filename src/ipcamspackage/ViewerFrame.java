@@ -61,7 +61,7 @@ public class ViewerFrame extends javax.swing.JFrame {
         }
 
         try {
-            File config = new File("~/Deaktop/config.cfg");
+            File config = new File("~/Desktop/config.cfg");
             dummy = ImageIO.read(blankimg);
             FileReader fr = new FileReader(config);
             BufferedReader br = new BufferedReader(fr);
